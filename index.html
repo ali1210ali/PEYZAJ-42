@@ -1,0 +1,726 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Peyzaj 42 - Profesyonel Peyzaj Tasarım Hizmetleri</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Header -->
+    <header>
+        <nav>
+            <div class="logo">
+                <i class="fas fa-leaf"></i>
+                <span>Peyzaj 42</span>
+            </div>
+            <div class="menu-toggle">
+                <i class="fas fa-bars"></i>
+            </div>
+            <ul class="nav-links">
+                <li><a href="#anasayfa" class="active">Ana Sayfa</a></li>
+                <li><a href="#hizmetler">Hizmetler</a></li>
+                <li><a href="#urunler">Ürünler</a></li>
+                <li><a href="#hakkimizda">Hakkımızda</a></li>
+                <li><a href="#iletisim">İletişim</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Hero Section -->
+    <section id="anasayfa" class="hero">
+        <div class="hero-background">
+            <img src="https://images.unsplash.com/photo-1585320806297-9794b3e4eeae?ixlib=rb-1.2.1&auto=format&fit=crop&w=1950&q=80" alt="Peyzaj Tasarım">
+            <div class="overlay"></div>
+        </div>
+        <div class="hero-content" data-aos="fade-up">
+            <div class="content-wrapper">
+                <h1>Hayalinizdeki Bahçeyi Birlikte Yaratıyoruz</h1>
+                <p>42 yıllık deneyimimizle profesyonel peyzaj tasarım hizmetleri sunuyoruz</p>
+                <div class="hero-buttons">
+                    <a href="#iletisim" class="cta-button primary">Ücretsiz Keşif</a>
+                    <a href="#hizmetler" class="cta-button secondary">Hizmetlerimiz</a>
+                </div>
+            </div>
+        </div>
+        <div class="hero-stats">
+            <div class="stat-item" data-aos="fade-up" data-aos-delay="100">
+                <i class="fas fa-trophy"></i>
+                <h3>42+</h3>
+                <p>Yıllık Deneyim</p>
+            </div>
+            <div class="stat-item" data-aos="fade-up" data-aos-delay="200">
+                <i class="fas fa-project-diagram"></i>
+                <h3>1000+</h3>
+                <p>Tamamlanan Proje</p>
+            </div>
+            <div class="stat-item" data-aos="fade-up" data-aos-delay="300">
+                <i class="fas fa-users"></i>
+                <h3>5000+</h3>
+                <p>Mutlu Müşteri</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Services Section -->
+    <section id="hizmetler" class="services">
+        <div class="section-header" data-aos="fade-up">
+            <h2>Özel Hizmetlerimiz</h2>
+            <p>Size özel tasarlanmış peyzaj çözümleri sunuyoruz</p>
+        </div>
+        <div class="service-grid">
+            <div class="service-card" data-aos="fade-up">
+                <i class="fas fa-tree"></i>
+                <h3>Lüks Villa Bahçeleri</h3>
+                <p>Özel tasarım havuzlar, şelaleler ve egzotik bitkiler</p>
+            </div>
+            <div class="service-card" data-aos="fade-up" data-aos-delay="100">
+                <i class="fas fa-building"></i>
+                <h3>Kurumsal Peyzaj</h3>
+                <p>Şirket binaları ve iş merkezleri için özel tasarımlar</p>
+            </div>
+            <div class="service-card" data-aos="fade-up" data-aos-delay="200">
+                <i class="fas fa-water"></i>
+                <h3>Akıllı Sulama</h3>
+                <p>Mobil uygulama kontrollü sulama sistemleri</p>
+            </div>
+            <div class="service-card" data-aos="fade-up" data-aos-delay="300">
+                <i class="fas fa-lightbulb"></i>
+                <h3>LED Aydınlatma</h3>
+                <p>Enerji tasarruflu özel tasarım aydınlatma</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Products Section -->
+    <section id="urunler" class="products">
+        <div class="section-header" data-aos="fade-up">
+            <h2>Çiçek Çeşitlerimiz</h2>
+            <p>Özel sera yetiştiriciliği ile üretilen nadir çiçekler</p>
+            <div class="category-filter">
+                <button class="filter-btn active" data-category="all">Tümü</button>
+                <button class="filter-btn" data-category="indoor">İç Mekan</button>
+                <button class="filter-btn" data-category="outdoor">Dış Mekan</button>
+                <button class="filter-btn" data-category="rare">Nadir</button>
+                <button class="filter-btn" data-category="seasonal">Mevsimlik</button>
+            </div>
+        </div>
+        <div class="product-grid">
+            <div class="product-card" data-aos="fade-up" data-category="indoor">
+                <div class="product-image">
+                    <img src="https://images.unsplash.com/photo-1518621736915-f3b1c41bfd00?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80" alt="Menekşe">
+                    <div class="product-badge">İç Mekan</div>
+                </div>
+                <div class="product-info">
+                    <h3>Menekşe</h3>
+                    <p>Özel yetiştirilen nadir menekşe türleri ve hibrit çeşitleri</p>
+                    <div class="product-features">
+                        <span><i class="fas fa-sun"></i> Yarı Gölge</span>
+                        <span><i class="fas fa-tint"></i> Orta Su</span>
+                        <span><i class="fas fa-thermometer-half"></i> 18-24°C</span>
+                    </div>
+                    <div class="product-price">
+                        <span class="price">₺75</span>
+                        <span class="unit">/ adet</span>
+                    </div>
+                    <button class="product-button">Detaylı Bilgi</button>
+                </div>
+            </div>
+            <div class="product-card" data-aos="fade-up" data-category="outdoor">
+                <div class="product-image">
+                    <img src="https://images.unsplash.com/photo-1518621736915-f3b1c41bfd00?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80" alt="Lavanta">
+                    <div class="product-badge">Dış Mekan</div>
+                </div>
+                <div class="product-info">
+                    <h3>Lavanta</h3>
+                    <p>Özel yetiştirilen nadir lavanta türleri ve hibrit çeşitleri</p>
+                    <div class="product-features">
+                        <span><i class="fas fa-sun"></i> Güneşli</span>
+                        <span><i class="fas fa-tint"></i> Az Su</span>
+                        <span><i class="fas fa-thermometer-half"></i> 15-25°C</span>
+                    </div>
+                    <div class="product-price">
+                        <span class="price">₺120</span>
+                        <span class="unit">/ adet</span>
+                    </div>
+                    <button class="product-button">Detaylı Bilgi</button>
+                </div>
+            </div>
+            <div class="product-card" data-aos="fade-up" data-category="rare">
+                <div class="product-image">
+                    <img src="https://images.unsplash.com/photo-1518621736915-f3b1c41bfd00?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80" alt="Siyah Orkide">
+                    <div class="product-badge">Nadir</div>
+                </div>
+                <div class="product-info">
+                    <h3>Siyah Orkide</h3>
+                    <p>Özel sera koşullarında yetiştirilen nadir siyah orkide türleri</p>
+                    <div class="product-features">
+                        <span><i class="fas fa-sun"></i> Yarı Gölge</span>
+                        <span><i class="fas fa-tint"></i> Orta Su</span>
+                        <span><i class="fas fa-thermometer-half"></i> 18-24°C</span>
+                    </div>
+                    <div class="product-price">
+                        <span class="price">₺350</span>
+                        <span class="unit">/ adet</span>
+                    </div>
+                    <button class="product-button">Detaylı Bilgi</button>
+                </div>
+            </div>
+            <div class="product-card" data-aos="fade-up" data-category="indoor">
+                <div class="product-image">
+                    <img src="https://images.unsplash.com/photo-1518621736915-f3b1c41bfd00?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80" alt="Kalanşo">
+                    <div class="product-badge">İç Mekan</div>
+                </div>
+                <div class="product-info">
+                    <h3>Kalanşo</h3>
+                    <p>Özel yetiştirilen nadir kalanşo türleri ve hibrit çeşitleri</p>
+                    <div class="product-features">
+                        <span><i class="fas fa-sun"></i> Güneşli</span>
+                        <span><i class="fas fa-tint"></i> Az Su</span>
+                        <span><i class="fas fa-thermometer-half"></i> 15-25°C</span>
+                    </div>
+                    <div class="product-price">
+                        <span class="price">₺85</span>
+                        <span class="unit">/ adet</span>
+                    </div>
+                    <button class="product-button">Detaylı Bilgi</button>
+                </div>
+            </div>
+            <div class="product-card" data-aos="fade-up" data-category="outdoor">
+                <div class="product-image">
+                    <img src="https://images.unsplash.com/photo-1518621736915-f3b1c41bfd00?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80" alt="Sümbül">
+                    <div class="product-badge">Dış Mekan</div>
+                </div>
+                <div class="product-info">
+                    <h3>Sümbül</h3>
+                    <p>Özel yetiştirilen nadir sümbül türleri ve hibrit çeşitleri</p>
+                    <div class="product-features">
+                        <span><i class="fas fa-sun"></i> Güneşli</span>
+                        <span><i class="fas fa-tint"></i> Orta Su</span>
+                        <span><i class="fas fa-thermometer-half"></i> 10-20°C</span>
+                    </div>
+                    <div class="product-price">
+                        <span class="price">₺95</span>
+                        <span class="unit">/ adet</span>
+                    </div>
+                    <button class="product-button">Detaylı Bilgi</button>
+                </div>
+            </div>
+            <div class="product-card" data-aos="fade-up" data-category="rare">
+                <div class="product-image">
+                    <img src="https://images.unsplash.com/photo-1518621736915-f3b1c41bfd00?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80" alt="Bonsai">
+                    <div class="product-badge">Nadir</div>
+                </div>
+                <div class="product-info">
+                    <h3>Bonsai</h3>
+                    <p>Özel yetiştirilen nadir bonsai türleri ve hibrit çeşitleri</p>
+                    <div class="product-features">
+                        <span><i class="fas fa-sun"></i> Yarı Gölge</span>
+                        <span><i class="fas fa-tint"></i> Orta Su</span>
+                        <span><i class="fas fa-thermometer-half"></i> 15-25°C</span>
+                    </div>
+                    <div class="product-price">
+                        <span class="price">₺450</span>
+                        <span class="unit">/ adet</span>
+                    </div>
+                    <button class="product-button">Detaylı Bilgi</button>
+                </div>
+            </div>
+            <div class="product-card" data-aos="fade-up" data-category="seasonal">
+                <div class="product-image">
+                    <img src="https://images.unsplash.com/photo-1518621736915-f3b1c41bfd00?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80" alt="Lale">
+                    <div class="product-badge">Mevsimlik</div>
+                </div>
+                <div class="product-info">
+                    <h3>Lale</h3>
+                    <p>Özel yetiştirilen nadir lale türleri ve hibrit çeşitleri</p>
+                    <div class="product-features">
+                        <span><i class="fas fa-sun"></i> Güneşli</span>
+                        <span><i class="fas fa-tint"></i> Orta Su</span>
+                        <span><i class="fas fa-thermometer-half"></i> 10-20°C</span>
+                    </div>
+                    <div class="product-price">
+                        <span class="price">₺150</span>
+                        <span class="unit">/ adet</span>
+                    </div>
+                    <button class="product-button">Detaylı Bilgi</button>
+                </div>
+            </div>
+            <div class="product-card" data-aos="fade-up" data-category="indoor">
+                <div class="product-image">
+                    <img src="https://images.unsplash.com/photo-1518621736915-f3b1c41bfd00?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80" alt="Begonya">
+                    <div class="product-badge">İç Mekan</div>
+                </div>
+                <div class="product-info">
+                    <h3>Begonya</h3>
+                    <p>Özel yetiştirilen nadir begonya türleri ve hibrit çeşitleri</p>
+                    <div class="product-features">
+                        <span><i class="fas fa-sun"></i> Yarı Gölge</span>
+                        <span><i class="fas fa-tint"></i> Orta Su</span>
+                        <span><i class="fas fa-thermometer-half"></i> 18-24°C</span>
+                    </div>
+                    <div class="product-price">
+                        <span class="price">₺90</span>
+                        <span class="unit">/ adet</span>
+                    </div>
+                    <button class="product-button">Detaylı Bilgi</button>
+                </div>
+            </div>
+            <div class="product-card" data-aos="fade-up" data-category="outdoor">
+                <div class="product-image">
+                    <img src="https://images.unsplash.com/photo-1518621736915-f3b1c41bfd00?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80" alt="Gül">
+                    <div class="product-badge">Dış Mekan</div>
+                </div>
+                <div class="product-info">
+                    <h3>Gül</h3>
+                    <p>Özel yetiştirilen nadir gül türleri ve hibrit çeşitleri</p>
+                    <div class="product-features">
+                        <span><i class="fas fa-sun"></i> Güneşli</span>
+                        <span><i class="fas fa-tint"></i> Orta Su</span>
+                        <span><i class="fas fa-thermometer-half"></i> 15-25°C</span>
+                    </div>
+                    <div class="product-price">
+                        <span class="price">₺180</span>
+                        <span class="unit">/ adet</span>
+                    </div>
+                    <button class="product-button">Detaylı Bilgi</button>
+                </div>
+            </div>
+            <div class="product-card" data-aos="fade-up" data-category="seasonal">
+                <div class="product-image">
+                    <img src="https://images.unsplash.com/photo-1518621736915-f3b1c41bfd00?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80" alt="Papatya">
+                    <div class="product-badge">Mevsimlik</div>
+                </div>
+                <div class="product-info">
+                    <h3>Papatya</h3>
+                    <p>Özel yetiştirilen nadir papatya türleri ve hibrit çeşitleri</p>
+                    <div class="product-features">
+                        <span><i class="fas fa-sun"></i> Güneşli</span>
+                        <span><i class="fas fa-tint"></i> Az Su</span>
+                        <span><i class="fas fa-thermometer-half"></i> 15-25°C</span>
+                    </div>
+                    <div class="product-price">
+                        <span class="price">₺80</span>
+                        <span class="unit">/ adet</span>
+                    </div>
+                    <button class="product-button">Detaylı Bilgi</button>
+                </div>
+            </div>
+            <div class="product-card" data-aos="fade-up" data-category="indoor">
+                <div class="product-image">
+                    <img src="https://images.unsplash.com/photo-1518621736915-f3b1c41bfd00?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80" alt="Kaktüs">
+                    <div class="product-badge">İç Mekan</div>
+                </div>
+                <div class="product-info">
+                    <h3>Kaktüs</h3>
+                    <p>Özel yetiştirilen nadir kaktüs türleri ve sukulentler</p>
+                    <div class="product-features">
+                        <span><i class="fas fa-sun"></i> Güneşli</span>
+                        <span><i class="fas fa-tint"></i> Az Su</span>
+                        <span><i class="fas fa-thermometer-half"></i> 20-30°C</span>
+                    </div>
+                    <div class="product-price">
+                        <span class="price">₺120</span>
+                        <span class="unit">/ adet</span>
+                    </div>
+                    <button class="product-button">Detaylı Bilgi</button>
+                </div>
+            </div>
+            <div class="product-card" data-aos="fade-up" data-category="rare">
+                <div class="product-image">
+                    <img src="https://images.unsplash.com/photo-1518621736915-f3b1c41bfd00?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80" alt="Zambak">
+                    <div class="product-badge">Nadir</div>
+                </div>
+                <div class="product-info">
+                    <h3>Zambak</h3>
+                    <p>Özel yetiştirilen nadir zambak türleri ve hibrit çeşitleri</p>
+                    <div class="product-features">
+                        <span><i class="fas fa-sun"></i> Güneşli</span>
+                        <span><i class="fas fa-tint"></i> Orta Su</span>
+                        <span><i class="fas fa-thermometer-half"></i> 15-25°C</span>
+                    </div>
+                    <div class="product-price">
+                        <span class="price">₺200</span>
+                        <span class="unit">/ adet</span>
+                    </div>
+                    <button class="product-button">Detaylı Bilgi</button>
+                </div>
+            </div>
+            <div class="product-card" data-aos="fade-up" data-category="indoor">
+                <div class="product-image">
+                    <img src="https://images.unsplash.com/photo-1518621736915-f3b1c41bfd00?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80" alt="Antoryum">
+                    <div class="product-badge">İç Mekan</div>
+                </div>
+                <div class="product-info">
+                    <h3>Antoryum</h3>
+                    <p>Özel yetiştirilen nadir antoryum türleri ve hibrit çeşitleri</p>
+                    <div class="product-features">
+                        <span><i class="fas fa-sun"></i> Yarı Gölge</span>
+                        <span><i class="fas fa-tint"></i> Orta Su</span>
+                        <span><i class="fas fa-thermometer-half"></i> 18-24°C</span>
+                    </div>
+                    <div class="product-price">
+                        <span class="price">₺280</span>
+                        <span class="unit">/ adet</span>
+                    </div>
+                    <button class="product-button">Detaylı Bilgi</button>
+                </div>
+            </div>
+            <div class="product-card" data-aos="fade-up" data-category="outdoor">
+                <div class="product-image">
+                    <img src="https://images.unsplash.com/photo-1518621736915-f3b1c41bfd00?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80" alt="Sardunya">
+                    <div class="product-badge">Dış Mekan</div>
+                </div>
+                <div class="product-info">
+                    <h3>Sardunya</h3>
+                    <p>Özel yetiştirilen nadir sardunya türleri ve hibrit çeşitleri</p>
+                    <div class="product-features">
+                        <span><i class="fas fa-sun"></i> Güneşli</span>
+                        <span><i class="fas fa-tint"></i> Orta Su</span>
+                        <span><i class="fas fa-thermometer-half"></i> 15-25°C</span>
+                    </div>
+                    <div class="product-price">
+                        <span class="price">₺100</span>
+                        <span class="unit">/ adet</span>
+                    </div>
+                    <button class="product-button">Detaylı Bilgi</button>
+                </div>
+            </div>
+            <div class="product-card" data-aos="fade-up" data-category="rare">
+                <div class="product-image">
+                    <img src="https://images.unsplash.com/photo-1518621736915-f3b1c41bfd00?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80" alt="Orkide">
+                    <div class="product-badge">Nadir</div>
+                </div>
+                <div class="product-info">
+                    <h3>Orkide</h3>
+                    <p>Özel yetiştirilen nadir orkide türleri ve hibrit çeşitleri</p>
+                    <div class="product-features">
+                        <span><i class="fas fa-sun"></i> Yarı Gölge</span>
+                        <span><i class="fas fa-tint"></i> Orta Su</span>
+                        <span><i class="fas fa-thermometer-half"></i> 18-24°C</span>
+                    </div>
+                    <div class="product-price">
+                        <span class="price">₺250</span>
+                        <span class="unit">/ adet</span>
+                    </div>
+                    <button class="product-button">Detaylı Bilgi</button>
+                </div>
+            </div>
+            <div class="product-card" data-aos="fade-up" data-category="seasonal">
+                <div class="product-image">
+                    <img src="https://images.unsplash.com/photo-1518621736915-f3b1c41bfd00?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80" alt="Nergis">
+                    <div class="product-badge">Mevsimlik</div>
+                </div>
+                <div class="product-info">
+                    <h3>Nergis</h3>
+                    <p>Özel yetiştirilen nadir nergis türleri ve hibrit çeşitleri</p>
+                    <div class="product-features">
+                        <span><i class="fas fa-sun"></i> Güneşli</span>
+                        <span><i class="fas fa-tint"></i> Orta Su</span>
+                        <span><i class="fas fa-thermometer-half"></i> 10-20°C</span>
+                    </div>
+                    <div class="product-price">
+                        <span class="price">₺110</span>
+                        <span class="unit">/ adet</span>
+                    </div>
+                    <button class="product-button">Detaylı Bilgi</button>
+                </div>
+            </div>
+            <div class="product-card" data-aos="fade-up" data-category="indoor">
+                <div class="product-image">
+                    <img src="https://images.unsplash.com/photo-1518621736915-f3b1c41bfd00?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80" alt="Ficus">
+                    <div class="product-badge">İç Mekan</div>
+                </div>
+                <div class="product-info">
+                    <h3>Ficus</h3>
+                    <p>Özel yetiştirilen nadir ficus türleri ve hibrit çeşitleri</p>
+                    <div class="product-features">
+                        <span><i class="fas fa-sun"></i> Yarı Gölge</span>
+                        <span><i class="fas fa-tint"></i> Orta Su</span>
+                        <span><i class="fas fa-thermometer-half"></i> 18-24°C</span>
+                    </div>
+                    <div class="product-price">
+                        <span class="price">₺320</span>
+                        <span class="unit">/ adet</span>
+                    </div>
+                    <button class="product-button">Detaylı Bilgi</button>
+                </div>
+            </div>
+            <div class="product-card" data-aos="fade-up" data-category="outdoor">
+                <div class="product-image">
+                    <img src="https://images.unsplash.com/photo-1518621736915-f3b1c41bfd00?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80" alt="Leylak">
+                    <div class="product-badge">Dış Mekan</div>
+                </div>
+                <div class="product-info">
+                    <h3>Leylak</h3>
+                    <p>Özel yetiştirilen nadir leylak türleri ve hibrit çeşitleri</p>
+                    <div class="product-features">
+                        <span><i class="fas fa-sun"></i> Güneşli</span>
+                        <span><i class="fas fa-tint"></i> Orta Su</span>
+                        <span><i class="fas fa-thermometer-half"></i> 15-25°C</span>
+                    </div>
+                    <div class="product-price">
+                        <span class="price">₺160</span>
+                        <span class="unit">/ adet</span>
+                    </div>
+                    <button class="product-button">Detaylı Bilgi</button>
+                </div>
+            </div>
+            <div class="product-card" data-aos="fade-up" data-category="rare">
+                <div class="product-image">
+                    <img src="https://images.unsplash.com/photo-1518621736915-f3b1c41bfd00?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80" alt="Mavi Orkide">
+                    <div class="product-badge">Nadir</div>
+                </div>
+                <div class="product-info">
+                    <h3>Mavi Orkide</h3>
+                    <p>Özel yetiştirilen nadir mavi orkide türleri ve hibrit çeşitleri</p>
+                    <div class="product-features">
+                        <span><i class="fas fa-sun"></i> Yarı Gölge</span>
+                        <span><i class="fas fa-tint"></i> Orta Su</span>
+                        <span><i class="fas fa-thermometer-half"></i> 18-24°C</span>
+                    </div>
+                    <div class="product-price">
+                        <span class="price">₺380</span>
+                        <span class="unit">/ adet</span>
+                    </div>
+                    <button class="product-button">Detaylı Bilgi</button>
+                </div>
+            </div>
+            <div class="product-card" data-aos="fade-up" data-category="seasonal">
+                <div class="product-image">
+                    <img src="https://images.unsplash.com/photo-1518621736915-f3b1c41bfd00?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80" alt="Süsen">
+                    <div class="product-badge">Mevsimlik</div>
+                </div>
+                <div class="product-info">
+                    <h3>Süsen</h3>
+                    <p>Özel yetiştirilen nadir süsen türleri ve hibrit çeşitleri</p>
+                    <div class="product-features">
+                        <span><i class="fas fa-sun"></i> Güneşli</span>
+                        <span><i class="fas fa-tint"></i> Orta Su</span>
+                        <span><i class="fas fa-thermometer-half"></i> 10-20°C</span>
+                    </div>
+                    <div class="product-price">
+                        <span class="price">₺130</span>
+                        <span class="unit">/ adet</span>
+                    </div>
+                    <button class="product-button">Detaylı Bilgi</button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="hakkimizda" class="about">
+        <div class="about-content" data-aos="fade-right">
+            <h2>Hakkımızda</h2>
+            <p>1982 yılından bu yana Türkiye'nin önde gelen peyzaj tasarım şirketlerinden biri olarak hizmet veriyoruz. Uzman ekibimiz ve yenilikçi yaklaşımımızla her projeyi özel kılıyoruz.</p>
+            <div class="about-features">
+                <div class="feature">
+                    <i class="fas fa-check-circle"></i>
+                    <span>Profesyonel Ekip</span>
+                </div>
+                <div class="feature">
+                    <i class="fas fa-check-circle"></i>
+                    <span>Modern Teknoloji</span>
+                </div>
+                <div class="feature">
+                    <i class="fas fa-check-circle"></i>
+                    <span>Kaliteli Malzeme</span>
+                </div>
+                <div class="feature">
+                    <i class="fas fa-check-circle"></i>
+                    <span>7/24 Destek</span>
+                </div>
+            </div>
+        </div>
+        <div class="about-image" data-aos="fade-left">
+            <div class="image-container">
+                <img src="https://images.unsplash.com/photo-1585320806297-9794b3e4eeae?ixlib=rb-1.2.1&auto=format&fit=crop&w=1950&q=80" alt="Peyzaj Tasarım">
+                <div class="image-overlay"></div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="iletisim" class="contact">
+        <div class="section-header" data-aos="fade-up">
+            <h2>İletişim</h2>
+            <p>Projeniz için bizimle iletişime geçin</p>
+        </div>
+        <div class="contact-container">
+            <form class="contact-form" data-aos="fade-right">
+                <div class="form-group">
+                    <input type="text" placeholder="Adınız" required>
+                </div>
+                <div class="form-group">
+                    <input type="email" placeholder="E-posta Adresiniz" required>
+                </div>
+                <div class="form-group">
+                    <input type="tel" placeholder="Telefon Numaranız" required>
+                </div>
+                <div class="form-group">
+                    <select required>
+                        <option value="">Hizmet Seçiniz</option>
+                        <option value="villa">Villa Bahçesi</option>
+                        <option value="teras">Teras Bahçesi</option>
+                        <option value="kurumsal">Kurumsal Peyzaj</option>
+                        <option value="bakim">Bakım Hizmeti</option>
+                    </select>
+                </div>
+                <div class="form-group">
+                    <textarea placeholder="Projeniz hakkında bilgi veriniz" required></textarea>
+                </div>
+                <button type="submit" class="submit-button">Gönder</button>
+            </form>
+            <div class="contact-info" data-aos="fade-left">
+                <div class="info-card">
+                    <i class="fas fa-map-marker-alt"></i>
+                    <h3>Adres</h3>
+                    <p>Levent, İstanbul</p>
+                </div>
+                <div class="info-card">
+                    <i class="fas fa-phone"></i>
+                    <h3>Telefon</h3>
+                    <p>+90 212 123 45 67</p>
+                </div>
+                <div class="info-card">
+                    <i class="fas fa-envelope"></i>
+                    <h3>E-posta</h3>
+                    <p>info@peyzaj42.com</p>
+                </div>
+                <div class="info-card">
+                    <i class="fas fa-clock"></i>
+                    <h3>Çalışma Saatleri</h3>
+                    <p>Pazartesi - Cumartesi: 09:00 - 18:00</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="footer-content">
+            <div class="footer-section">
+                <h3>Peyzaj 42</h3>
+                <p>Türkiye'nin önde gelen peyzaj tasarım şirketi</p>
+                <div class="social-links">
+                    <a href="#"><i class="fab fa-facebook"></i></a>
+                    <a href="#"><i class="fab fa-instagram"></i></a>
+                    <a href="#"><i class="fab fa-twitter"></i></a>
+                    <a href="#"><i class="fab fa-linkedin"></i></a>
+                </div>
+            </div>
+            <div class="footer-section">
+                <h3>Hızlı Bağlantılar</h3>
+                <ul>
+                    <li><a href="#anasayfa">Ana Sayfa</a></li>
+                    <li><a href="#hizmetler">Hizmetler</a></li>
+                    <li><a href="#urunler">Ürünler</a></li>
+                    <li><a href="#hakkimizda">Hakkımızda</a></li>
+                    <li><a href="#iletisim">İletişim</a></li>
+                </ul>
+            </div>
+            <div class="footer-section">
+                <h3>İletişim</h3>
+                <p><i class="fas fa-map-marker-alt"></i> Levent, İstanbul</p>
+                <p><i class="fas fa-phone"></i> +90 212 123 45 67</p>
+                <p><i class="fas fa-envelope"></i> info@peyzaj42.com</p>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2024 Peyzaj 42. Tüm hakları saklıdır.</p>
+        </div>
+    </footer>
+
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+        AOS.init({
+            duration: 1000,
+            once: true
+        });
+
+        // Smooth scrolling
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                document.querySelector(this.getAttribute('href')).scrollIntoView({
+                    behavior: 'smooth'
+                });
+            });
+        });
+
+        // Mobile menu toggle
+        const menuToggle = document.querySelector('.menu-toggle');
+        const navLinks = document.querySelector('.nav-links');
+
+        menuToggle.addEventListener('click', () => {
+            navLinks.classList.toggle('active');
+            menuToggle.classList.toggle('active');
+        });
+
+        // Nav link active state
+        const navItems = document.querySelectorAll('.nav-links a');
+        navItems.forEach(item => {
+            item.addEventListener('click', () => {
+                navItems.forEach(i => i.classList.remove('active'));
+                item.classList.add('active');
+            });
+        });
+
+        // Product filtering
+        const filterButtons = document.querySelectorAll('.filter-btn');
+        const productCards = document.querySelectorAll('.product-card');
+
+        // Show all products initially
+        productCards.forEach(card => {
+            card.classList.add('show');
+        });
+
+        filterButtons.forEach(button => {
+            button.addEventListener('click', () => {
+                // Remove active class from all buttons
+                filterButtons.forEach(btn => btn.classList.remove('active'));
+                // Add active class to clicked button
+                button.classList.add('active');
+
+                const category = button.getAttribute('data-category');
+
+                productCards.forEach(card => {
+                    if (category === 'all') {
+                        card.classList.add('show');
+                    } else {
+                        if (card.getAttribute('data-category') === category) {
+                            card.classList.add('show');
+                        } else {
+                            card.classList.remove('show');
+                        }
+                    }
+                });
+            });
+        });
+
+        // Add animation to product cards
+        const observerOptions = {
+            threshold: 0.1
+        };
+
+        const observer = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    entry.target.style.opacity = '1';
+                    entry.target.style.transform = 'translateY(0)';
+                }
+            });
+        }, observerOptions);
+
+        productCards.forEach(card => {
+            observer.observe(card);
+        });
+    </script>
+</body>
+</html>
