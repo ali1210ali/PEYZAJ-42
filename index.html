@@ -3,348 +3,926 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Peyzaj 42 - Profesyonel Peyzaj Tasarım Hizmetleri">
-    <title>Peyzaj 42 - Profesyonel Peyzaj Tasarım Hizmetleri</title>
+    <title>Peyzaj Tasarım Stüdyosu</title>
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
-    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
 </head>
 <body>
-    <!-- Header -->
     <header>
         <nav>
             <div class="logo">
-                <i class="fas fa-leaf"></i>
-                <span>Peyzaj 42</span>
-            </div>
-            <div class="menu-toggle">
-                <i class="fas fa-bars"></i>
+                <i class="fas fa-leaf" style="color:#27ae60; font-size:2rem; vertical-align:middle;"></i>
+                <span style="font-size:1.7rem; font-weight:bold; margin-left:0.5rem; vertical-align:middle;">Peyzaj 42</span>
             </div>
             <ul class="nav-links">
-                <li><a href="#anasayfa" class="active">Ana Sayfa</a></li>
+                <li><a href="#anasayfa">Ana Sayfa</a></li>
                 <li><a href="#hizmetler">Hizmetler</a></li>
                 <li><a href="#urunler">Ürünler</a></li>
                 <li><a href="#hakkimizda">Hakkımızda</a></li>
                 <li><a href="#iletisim">İletişim</a></li>
             </ul>
+            <div class="hamburger" id="hamburger-menu">
+                <i class="fas fa-bars"></i>
+            </div>
         </nav>
+        <div class="mobile-nav" id="mobile-nav">
+            <div class="mobile-nav-header">
+                <span>Peyzaj 42</span>
+                <span class="close-mobile-nav" id="close-mobile-nav">&times;</span>
+            </div>
+            <ul>
+                <li><a href="#anasayfa">Ana Sayfa</a></li>
+                <li><a href="#hizmetler">Hizmetler</a></li>
+                <li><a href="#urunler">Ürünler</a></li>
+                <li><a href="#hakkimizda">Hakkımızda</a></li>
+                <li><a href="#iletisim">İletişim</a></li>
+            </ul>
+        </div>
     </header>
 
-    <!-- Hero Section -->
     <section id="anasayfa" class="hero">
-        <div class="hero-background">
-            <img src="https://images.unsplash.com/photo-1585320806297-9794b3e4eeae?ixlib=rb-1.2.1&auto=format&fit=crop&w=1950&q=80" alt="Peyzaj Tasarım">
-            <div class="overlay"></div>
-        </div>
-        <div class="hero-content" data-aos="fade-up">
-            <div class="content-wrapper">
-                <h1>Hayalinizdeki Bahçeyi Birlikte Yaratıyoruz</h1>
-                <p>42 yıllık deneyimimizle profesyonel peyzaj tasarım hizmetleri sunuyoruz</p>
-                <div class="hero-buttons">
-                    <a href="#iletisim" class="cta-button primary">Ücretsiz Keşif</a>
-                    <a href="#hizmetler" class="cta-button secondary">Hizmetlerimiz</a>
+        <div class="hero-content hero-content-custom">
+            <h1>Hayalinizdeki Bahçeyi Birlikte Yaratıyoruz</h1>
+            <p>42 yıllık deneyimimizle profesyonel peyzaj tasarım hizmetleri sunuyoruz</p>
+            <div class="hero-buttons">
+                <a href="#iletisim" class="cta-button">Ücretsiz Keşif</a>
+                <a href="#hizmetler" class="cta-button-outline">Hizmetlerimiz</a>
+            </div>
+            <div class="hero-stats">
+                <div class="hero-stat">
+                    <i class="fas fa-trophy"></i>
+                    <div>
+                        <span class="stat-number">42+</span>
+                        <span class="stat-label">Yıllık Deneyim</span>
+                    </div>
                 </div>
-            </div>
-        </div>
-        <div class="hero-stats">
-            <div class="stat-item" data-aos="fade-up" data-aos-delay="100">
-                <i class="fas fa-trophy"></i>
-                <h3>42+</h3>
-                <p>Yıllık Deneyim</p>
-            </div>
-            <div class="stat-item" data-aos="fade-up" data-aos-delay="200">
-                <i class="fas fa-project-diagram"></i>
-                <h3>1000+</h3>
-                <p>Tamamlanan Proje</p>
-            </div>
-            <div class="stat-item" data-aos="fade-up" data-aos-delay="300">
-                <i class="fas fa-users"></i>
-                <h3>5000+</h3>
-                <p>Mutlu Müşteri</p>
+                <div class="hero-stat">
+                    <i class="fas fa-tools"></i>
+                    <div>
+                        <span class="stat-number">1000+</span>
+                        <span class="stat-label">Tamamlanan Proje</span>
+                    </div>
+                </div>
+                <div class="hero-stat">
+                    <i class="fas fa-users"></i>
+                    <div>
+                        <span class="stat-number">5000+</span>
+                        <span class="stat-label">Mutlu Müşteri</span>
+                    </div>
+                </div>
             </div>
         </div>
     </section>
 
-    <!-- Services Section -->
     <section id="hizmetler" class="services">
-        <div class="section-header" data-aos="fade-up">
-            <h2>Özel Hizmetlerimiz</h2>
-            <p>Size özel tasarlanmış peyzaj çözümleri sunuyoruz</p>
-        </div>
+        <h2>Hizmetlerimiz</h2>
         <div class="service-grid">
-            <div class="service-card" data-aos="fade-up">
+            <div class="service-card">
                 <i class="fas fa-tree"></i>
-                <h3>Lüks Villa Bahçeleri</h3>
-                <p>Özel tasarım havuzlar, şelaleler ve egzotik bitkiler</p>
+                <h3>Peyzaj Tasarımı</h3>
+                <p>Özel bahçe ve peyzaj tasarım projeleri</p>
             </div>
-            <div class="service-card" data-aos="fade-up" data-aos-delay="100">
-                <i class="fas fa-building"></i>
-                <h3>Kurumsal Peyzaj</h3>
-                <p>Şirket binaları ve iş merkezleri için özel tasarımlar</p>
+            <div class="service-card">
+                <i class="fas fa-leaf"></i>
+                <h3>Bitki Düzenleme</h3>
+                <p>Uyumlu bitki seçimi ve düzenlemesi</p>
             </div>
-            <div class="service-card" data-aos="fade-up" data-aos-delay="200">
+            <div class="service-card">
                 <i class="fas fa-water"></i>
-                <h3>Akıllı Sulama</h3>
-                <p>Mobil uygulama kontrollü sulama sistemleri</p>
+                <h3>Su Özellikleri</h3>
+                <p>Havuz ve su bahçesi tasarımları</p>
             </div>
-            <div class="service-card" data-aos="fade-up" data-aos-delay="300">
-                <i class="fas fa-lightbulb"></i>
-                <h3>LED Aydınlatma</h3>
-                <p>Enerji tasarruflu özel tasarım aydınlatma</p>
+            <div class="service-card">
+                <i class="fas fa-sun"></i>
+                <h3>Dış Mekan Aydınlatma</h3>
+                <p>Bahçe ve peyzaj aydınlatma sistemleri</p>
             </div>
         </div>
     </section>
 
-    <!-- Products Section -->
-    <section id="urunler" class="products">
-        <div class="section-header" data-aos="fade-up">
-            <h2>Çiçek Çeşitlerimiz</h2>
-            <p>Özel sera yetiştiriciliği ile üretilen nadir çiçekler</p>
-            <div class="category-filter">
-                <button class="filter-btn active" data-category="all">Tümü</button>
-                <button class="filter-btn" data-category="indoor">İç Mekan</button>
-                <button class="filter-btn" data-category="outdoor">Dış Mekan</button>
-                <button class="filter-btn" data-category="rare">Nadir</button>
-                <button class="filter-btn" data-category="seasonal">Mevsimlik</button>
-            </div>
+    <section id="urunler" class="products flower-section">
+        <h2 class="products-title">Çiçek Çeşitlerimiz</h2>
+        <p class="products-desc">Özel sera yetiştiriciliği ile üretilen nadir çiçekler</p>
+        <div class="products-search">
+            <input type="text" id="product-search" placeholder="Ürün adı veya açıklama ile ara...">
         </div>
-        <div class="product-grid">
-            <!-- Nadir Türk Çiçekleri -->
-            <div class="product-card" data-aos="fade-up" data-category="rare">
-                <div class="product-image">
-                    <img src="https://images.unsplash.com/photo-1518621736915-f3b1c41bfd00?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80" alt="Anadolu Karanfili">
-                    <div class="product-badge">Nadir</div>
+        <div class="product-grid flower-grid">
+            <div class="flower-card">
+                <div class="flower-img-wrap">
+                    <div class="living-badge ic"><i class="fas fa-home"></i>İç Mekan</div>
+                    <img src="https://images.unsplash.com/photo-1465101046530-73398c7f28ca?auto=format&fit=crop&w=400&q=80" alt="Orkide">
                 </div>
-                <div class="product-info">
-                    <h3>Anadolu Karanfili</h3>
-                    <p>Türkiye'ye özgü endemik karanfil türü, özel sera koşullarında yetiştirilir</p>
-                    <div class="product-features">
+                <div class="flower-content">
+                    <h3>Orkide</h3>
+                    <p>Zarif ve asil görünümlü, uzun ömürlü iç mekan bitkisi.</p>
+                    <div class="flower-features">
+                        <span><i class="fas fa-cloud-sun"></i> Yarı Gölge</span>
+                        <span><i class="fas fa-tint"></i> Az Su</span>
+                        <span><i class="fas fa-thermometer-half"></i> 18-25°C</span>
+                    </div>
+                    <div class="flower-bottom">
+                        <span class="flower-price">₺220 <span>/ adet</span></span>
+                        <a href="https://wa.me/905054315002?text=Merhaba,%20Orkide%20siparişi%20vermek%20istiyorum." target="_blank" class="flower-btn">WhatsApp Sipariş</a>
+                    </div>
+                </div>
+            </div>
+            <div class="flower-card">
+                <div class="flower-img-wrap">
+                    <div class="living-badge dis"><i class="fas fa-tree"></i>Dış Mekan</div>
+                    <img src="https://images.unsplash.com/photo-1501004318641-b39e6451bec6?auto=format&fit=crop&w=400&q=80" alt="Zambak">
+                </div>
+                <div class="flower-content">
+                    <h3>Zambak</h3>
+                    <p>Gösterişli çiçekleri ve hoş kokusuyla bahçelerin vazgeçilmezi.</p>
+                    <div class="flower-features">
                         <span><i class="fas fa-sun"></i> Güneşli</span>
                         <span><i class="fas fa-tint"></i> Orta Su</span>
                         <span><i class="fas fa-thermometer-half"></i> 15-25°C</span>
                     </div>
-                    <div class="product-price">
-                        <span class="price">₺280</span>
-                        <span class="unit">/ adet</span>
+                    <div class="flower-bottom">
+                        <span class="flower-price">₺150 <span>/ adet</span></span>
+                        <a href="https://wa.me/905054315002?text=Merhaba,%20Zambak%20siparişi%20vermek%20istiyorum." target="_blank" class="flower-btn">WhatsApp Sipariş</a>
                     </div>
-                    <button class="product-button">Detaylı Bilgi</button>
                 </div>
             </div>
-
-            <div class="product-card" data-aos="fade-up" data-category="rare">
-                <div class="product-image">
-                    <img src="https://images.unsplash.com/photo-1518621736915-f3b1c41bfd00?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80" alt="Kapadokya Gülü">
-                    <div class="product-badge">Nadir</div>
+            <div class="flower-card">
+                <div class="flower-img-wrap">
+                    <div class="living-badge ic"><i class="fas fa-home"></i>İç Mekan</div>
+                    <img src="https://images.unsplash.com/photo-1464983953574-0892a716854b?auto=format&fit=crop&w=400&q=80" alt="Lavanta">
                 </div>
-                <div class="product-info">
-                    <h3>Kapadokya Gülü</h3>
-                    <p>Kapadokya bölgesine özgü endemik gül türü, volkanik toprakta yetişir</p>
-                    <div class="product-features">
+                <div class="flower-content">
+                    <h3>Lavanta</h3>
+                    <p>Mor rengi ve rahatlatıcı kokusuyla bahçelerin favorisi.</p>
+                    <div class="flower-features">
                         <span><i class="fas fa-sun"></i> Güneşli</span>
                         <span><i class="fas fa-tint"></i> Az Su</span>
                         <span><i class="fas fa-thermometer-half"></i> 15-30°C</span>
                     </div>
-                    <div class="product-price">
-                        <span class="price">₺320</span>
-                        <span class="unit">/ adet</span>
+                    <div class="flower-bottom">
+                        <span class="flower-price">₺90 <span>/ adet</span></span>
+                        <a href="https://wa.me/905054315002?text=Merhaba,%20Lavanta%20siparişi%20vermek%20istiyorum." target="_blank" class="flower-btn">WhatsApp Sipariş</a>
                     </div>
-                    <button class="product-button">Detaylı Bilgi</button>
                 </div>
             </div>
-
-            <div class="product-card" data-aos="fade-up" data-category="rare">
-                <div class="product-image">
-                    <img src="https://images.unsplash.com/photo-1518621736915-f3b1c41bfd00?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80" alt="Türk Lalesi">
-                    <div class="product-badge">Nadir</div>
+            <div class="flower-card">
+                <div class="flower-img-wrap">
+                    <div class="living-badge dis"><i class="fas fa-tree"></i>Dış Mekan</div>
+                    <img src="https://images.unsplash.com/photo-1465101178521-c1a9136a3fd9?auto=format&fit=crop&w=400&q=80" alt="Papatya">
                 </div>
-                <div class="product-info">
-                    <h3>Türk Lalesi</h3>
-                    <p>Osmanlı döneminden gelen özel lale türü, el yapımı çömleklerde yetiştirilir</p>
-                    <div class="product-features">
-                        <span><i class="fas fa-sun"></i> Yarı Gölge</span>
+                <div class="flower-content">
+                    <h3>Papatya</h3>
+                    <p>Sade ve zarif görünümüyle bahçelerin sevilen çiçeği.</p>
+                    <div class="flower-features">
+                        <span><i class="fas fa-sun"></i> Güneşli</span>
+                        <span><i class="fas fa-tint"></i> Orta Su</span>
+                        <span><i class="fas fa-thermometer-half"></i> 10-25°C</span>
+                    </div>
+                    <div class="flower-bottom">
+                        <span class="flower-price">₺75 <span>/ adet</span></span>
+                        <a href="https://wa.me/905054315002?text=Merhaba,%20Papatya%20siparişi%20vermek%20istiyorum." target="_blank" class="flower-btn">WhatsApp Sipariş</a>
+                    </div>
+                </div>
+            </div>
+            <div class="flower-card">
+                <div class="flower-img-wrap">
+                    <div class="living-badge ic"><i class="fas fa-home"></i>İç Mekan</div>
+                    <img src="https://images.unsplash.com/photo-1465101046530-73398c7f28ca?auto=format&fit=crop&w=400&q=80" alt="Gül">
+                </div>
+                <div class="flower-content">
+                    <h3>Gül</h3>
+                    <p>Klasik güzelliği ve çeşitli renkleriyle bahçelerin kraliçesi.</p>
+                    <div class="flower-features">
+                        <span><i class="fas fa-sun"></i> Güneşli</span>
+                        <span><i class="fas fa-tint"></i> Orta Su</span>
+                        <span><i class="fas fa-thermometer-half"></i> 15-25°C</span>
+                    </div>
+                    <div class="flower-bottom">
+                        <span class="flower-price">₺130 <span>/ adet</span></span>
+                        <a href="https://wa.me/905054315002?text=Merhaba,%20Gül%20siparişi%20vermek%20istiyorum." target="_blank" class="flower-btn">WhatsApp Sipariş</a>
+                    </div>
+                </div>
+            </div>
+            <div class="flower-card">
+                <div class="flower-img-wrap">
+                    <div class="living-badge ic"><i class="fas fa-home"></i>İç Mekan</div>
+                    <img src="https://images.unsplash.com/photo-1465101046530-73398c7f28ca?auto=format&fit=crop&w=400&q=80" alt="Yasemin">
+                </div>
+                <div class="flower-content">
+                    <h3>Yasemin</h3>
+                    <p>Hoş kokusu ve beyaz çiçekleriyle bahçelerin vazgeçilmezi.</p>
+                    <div class="flower-features">
+                        <span><i class="fas fa-sun"></i> Güneşli</span>
+                        <span><i class="fas fa-tint"></i> Orta Su</span>
+                        <span><i class="fas fa-thermometer-half"></i> 15-25°C</span>
+                    </div>
+                    <div class="flower-bottom">
+                        <span class="flower-price">₺125 <span>/ adet</span></span>
+                        <a href="https://wa.me/905054315002?text=Merhaba,%20Yasemin%20siparişi%20vermek%20istiyorum." target="_blank" class="flower-btn">WhatsApp Sipariş</a>
+                    </div>
+                </div>
+            </div>
+            <div class="flower-card">
+                <div class="flower-img-wrap">
+                    <div class="living-badge dis"><i class="fas fa-tree"></i>Dış Mekan</div>
+                    <img src="https://images.unsplash.com/photo-1501004318641-b39e6451bec6?auto=format&fit=crop&w=400&q=80" alt="Karanfil">
+                </div>
+                <div class="flower-content">
+                    <h3>Karanfil</h3>
+                    <p>Dayanıklı yapısı ve renkli çiçekleriyle uzun ömürlü.</p>
+                    <div class="flower-features">
+                        <span><i class="fas fa-sun"></i> Güneşli</span>
+                        <span><i class="fas fa-tint"></i> Az Su</span>
+                        <span><i class="fas fa-thermometer-half"></i> 15-25°C</span>
+                    </div>
+                    <div class="flower-bottom">
+                        <span class="flower-price">₺85 <span>/ adet</span></span>
+                        <a href="https://wa.me/905054315002?text=Merhaba,%20Karanfil%20siparişi%20vermek%20istiyorum." target="_blank" class="flower-btn">WhatsApp Sipariş</a>
+                    </div>
+                </div>
+            </div>
+            <div class="flower-card">
+                <div class="flower-img-wrap">
+                    <div class="living-badge dis"><i class="fas fa-tree"></i>Dış Mekan</div>
+                    <img src="https://images.unsplash.com/photo-1464983953574-0892a716854b?auto=format&fit=crop&w=400&q=80" alt="Şakayık">
+                </div>
+                <div class="flower-content">
+                    <h3>Şakayık</h3>
+                    <p>Gösterişli ve büyük çiçekleriyle bahçelerin gözdesi.</p>
+                    <div class="flower-features">
+                        <span><i class="fas fa-sun"></i> Güneşli</span>
+                        <span><i class="fas fa-tint"></i> Orta Su</span>
+                        <span><i class="fas fa-thermometer-half"></i> 15-25°C</span>
+                    </div>
+                    <div class="flower-bottom">
+                        <span class="flower-price">₺190 <span>/ adet</span></span>
+                        <a href="https://wa.me/905054315002?text=Merhaba,%20Şakayık%20siparişi%20vermek%20istiyorum." target="_blank" class="flower-btn">WhatsApp Sipariş</a>
+                    </div>
+                </div>
+            </div>
+            <div class="flower-card">
+                <div class="flower-img-wrap">
+                    <div class="living-badge ic"><i class="fas fa-home"></i>İç Mekan</div>
+                    <img src="https://images.unsplash.com/photo-1465101178521-c1a9136a3fd9?auto=format&fit=crop&w=400&q=80" alt="Nergis">
+                </div>
+                <div class="flower-content">
+                    <h3>Nergis</h3>
+                    <p>İlkbaharın müjdecisi, sarı ve beyaz çiçekleriyle göz alıcı.</p>
+                    <div class="flower-features">
+                        <span><i class="fas fa-sun"></i> Güneşli</span>
                         <span><i class="fas fa-tint"></i> Orta Su</span>
                         <span><i class="fas fa-thermometer-half"></i> 10-20°C</span>
                     </div>
-                    <div class="product-price">
-                        <span class="price">₺450</span>
-                        <span class="unit">/ adet</span>
+                    <div class="flower-bottom">
+                        <span class="flower-price">₺95 <span>/ adet</span></span>
+                        <a href="https://wa.me/905054315002?text=Merhaba,%20Nergis%20siparişi%20vermek%20istiyorum." target="_blank" class="flower-btn">WhatsApp Sipariş</a>
                     </div>
-                    <button class="product-button">Detaylı Bilgi</button>
                 </div>
             </div>
-
-            <div class="product-card" data-aos="fade-up" data-category="rare">
-                <div class="product-image">
-                    <img src="https://images.unsplash.com/photo-1518621736915-f3b1c41bfd00?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80" alt="Anadolu Sümbülü">
-                    <div class="product-badge">Nadir</div>
+            <div class="flower-card">
+                <div class="flower-img-wrap">
+                    <div class="living-badge ic"><i class="fas fa-home"></i>İç Mekan</div>
+                    <img src="https://images.unsplash.com/photo-1465101046530-73398c7f28ca?auto=format&fit=crop&w=400&q=80" alt="Krizantem">
                 </div>
-                <div class="product-info">
-                    <h3>Anadolu Sümbülü</h3>
-                    <p>Türkiye'ye özgü endemik sümbül türü, özel bakım gerektirir</p>
-                    <div class="product-features">
+                <div class="flower-content">
+                    <h3>Krizantem</h3>
+                    <p>Sonbaharın simgesi, dayanıklı ve renkli çiçekleri.</p>
+                    <div class="flower-features">
                         <span><i class="fas fa-sun"></i> Güneşli</span>
                         <span><i class="fas fa-tint"></i> Orta Su</span>
-                        <span><i class="fas fa-thermometer-half"></i> 12-22°C</span>
+                        <span><i class="fas fa-thermometer-half"></i> 15-25°C</span>
                     </div>
-                    <div class="product-price">
-                        <span class="price">₺380</span>
-                        <span class="unit">/ adet</span>
+                    <div class="flower-bottom">
+                        <span class="flower-price">₺110 <span>/ adet</span></span>
+                        <a href="https://wa.me/905054315002?text=Merhaba,%20Krizantem%20siparişi%20vermek%20istiyorum." target="_blank" class="flower-btn">WhatsApp Sipariş</a>
                     </div>
-                    <button class="product-button">Detaylı Bilgi</button>
                 </div>
             </div>
-
-            <div class="product-card" data-aos="fade-up" data-category="rare">
-                <div class="product-image">
-                    <img src="https://images.unsplash.com/photo-1518621736915-f3b1c41bfd00?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80" alt="Ege Orkidesi">
-                    <div class="product-badge">Nadir</div>
+            <div class="flower-card">
+                <div class="flower-img-wrap">
+                    <div class="living-badge ic"><i class="fas fa-home"></i>İç Mekan</div>
+                    <img src="https://images.unsplash.com/photo-1506744038136-46273834b3fb?auto=format&fit=crop&w=400&q=80" alt="Begonya">
                 </div>
-                <div class="product-info">
-                    <h3>Ege Orkidesi</h3>
-                    <p>Ege bölgesine özgü endemik orkide türü, özel sera koşullarında yetiştirilir</p>
-                    <div class="product-features">
+                <div class="flower-content">
+                    <h3>Begonya</h3>
+                    <p>Canlı renkleriyle balkon ve bahçelerin vazgeçilmezi.</p>
+                    <div class="flower-features">
                         <span><i class="fas fa-sun"></i> Yarı Gölge</span>
                         <span><i class="fas fa-tint"></i> Orta Su</span>
-                        <span><i class="fas fa-thermometer-half"></i> 18-26°C</span>
+                        <span><i class="fas fa-thermometer-half"></i> 15-25°C</span>
                     </div>
-                    <div class="product-price">
-                        <span class="price">₺550</span>
-                        <span class="unit">/ adet</span>
+                    <div class="flower-bottom">
+                        <span class="flower-price">₺80 <span>/ adet</span></span>
+                        <a href="https://wa.me/905054315002?text=Merhaba,%20Begonya%20siparişi%20vermek%20istiyorum." target="_blank" class="flower-btn">WhatsApp Sipariş</a>
                     </div>
-                    <button class="product-button">Detaylı Bilgi</button>
                 </div>
             </div>
-
-            <div class="product-card" data-aos="fade-up" data-category="rare">
-                <div class="product-image">
-                    <img src="https://images.unsplash.com/photo-1518621736915-f3b1c41bfd00?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80" alt="Karadeniz Menekşesi">
-                    <div class="product-badge">Nadir</div>
+            <div class="flower-card">
+                <div class="flower-img-wrap">
+                    <div class="living-badge ic"><i class="fas fa-home"></i>İç Mekan</div>
+                    <img src="https://images.unsplash.com/photo-1519125323398-675f0ddb6308?auto=format&fit=crop&w=400&q=80" alt="Kasımpatı">
                 </div>
-                <div class="product-info">
-                    <h3>Karadeniz Menekşesi</h3>
-                    <p>Karadeniz bölgesine özgü endemik menekşe türü, nemli ortamda yetişir</p>
-                    <div class="product-features">
-                        <span><i class="fas fa-sun"></i> Gölge</span>
-                        <span><i class="fas fa-tint"></i> Çok Su</span>
-                        <span><i class="fas fa-thermometer-half"></i> 15-23°C</span>
+                <div class="flower-content">
+                    <h3>Kasımpatı</h3>
+                    <p>Sonbaharın en güzel çiçeği, uzun ömürlü ve dayanıklı.</p>
+                    <div class="flower-features">
+                        <span><i class="fas fa-sun"></i> Güneşli</span>
+                        <span><i class="fas fa-tint"></i> Orta Su</span>
+                        <span><i class="fas fa-thermometer-half"></i> 10-20°C</span>
                     </div>
-                    <div class="product-price">
-                        <span class="price">₺420</span>
-                        <span class="unit">/ adet</span>
+                    <div class="flower-bottom">
+                        <span class="flower-price">₺70 <span>/ adet</span></span>
+                        <a href="https://wa.me/905054315002?text=Merhaba,%20Kasımpatı%20siparişi%20vermek%20istiyorum." target="_blank" class="flower-btn">WhatsApp Sipariş</a>
                     </div>
-                    <button class="product-button">Detaylı Bilgi</button>
+                </div>
+            </div>
+            <div class="flower-card">
+                <div class="flower-img-wrap">
+                    <div class="living-badge ic"><i class="fas fa-home"></i>İç Mekan</div>
+                    <img src="https://images.unsplash.com/photo-1465101178521-c1a9136a3fd9?auto=format&fit=crop&w=400&q=80" alt="Sümbül">
+                </div>
+                <div class="flower-content">
+                    <h3>Sümbül</h3>
+                    <p>Hoş kokulu, mor ve pembe tonlarında bahar çiçeği.</p>
+                    <div class="flower-features">
+                        <span><i class="fas fa-sun"></i> Güneşli</span>
+                        <span><i class="fas fa-tint"></i> Orta Su</span>
+                        <span><i class="fas fa-thermometer-half"></i> 10-20°C</span>
+                    </div>
+                    <div class="flower-bottom">
+                        <span class="flower-price">₺95 <span>/ adet</span></span>
+                        <a href="https://wa.me/905054315002?text=Merhaba,%20Sümbül%20siparişi%20vermek%20istiyorum." target="_blank" class="flower-btn">WhatsApp Sipariş</a>
+                    </div>
+                </div>
+            </div>
+            <div class="flower-card">
+                <div class="flower-img-wrap">
+                    <div class="living-badge ic"><i class="fas fa-home"></i>İç Mekan</div>
+                    <img src="https://images.unsplash.com/photo-1502082553048-f009c37129b9?auto=format&fit=crop&w=400&q=80" alt="Menekşe">
+                </div>
+                <div class="flower-content">
+                    <h3>Menekşe</h3>
+                    <p>Mor ve beyaz tonlarıyla iç mekanların favorisi.</p>
+                    <div class="flower-features">
+                        <span><i class="fas fa-cloud-sun"></i> Yarı Gölge</span>
+                        <span><i class="fas fa-tint"></i> Az Su</span>
+                        <span><i class="fas fa-thermometer-half"></i> 18-24°C</span>
+                    </div>
+                    <div class="flower-bottom">
+                        <span class="flower-price">₺60 <span>/ adet</span></span>
+                        <a href="https://wa.me/905054315002?text=Merhaba,%20Menekşe%20siparişi%20vermek%20istiyorum." target="_blank" class="flower-btn">WhatsApp Sipariş</a>
+                    </div>
+                </div>
+            </div>
+            <div class="flower-card">
+                <div class="flower-img-wrap">
+                    <div class="living-badge ic"><i class="fas fa-home"></i>İç Mekan</div>
+                    <img src="https://images.unsplash.com/photo-1464983953574-0892a716854b?auto=format&fit=crop&w=400&q=80" alt="Kardelen">
+                </div>
+                <div class="flower-content">
+                    <h3>Kardelen</h3>
+                    <p>Kışın karlar arasından çıkan, beyaz zarif çiçek.</p>
+                    <div class="flower-features">
+                        <span><i class="fas fa-sun"></i> Güneşli</span>
+                        <span><i class="fas fa-tint"></i> Az Su</span>
+                        <span><i class="fas fa-thermometer-half"></i> 5-15°C</span>
+                    </div>
+                    <div class="flower-bottom">
+                        <span class="flower-price">₺100 <span>/ adet</span></span>
+                        <a href="https://wa.me/905054315002?text=Merhaba,%20Kardelen%20siparişi%20vermek%20istiyorum." target="_blank" class="flower-btn">WhatsApp Sipariş</a>
+                    </div>
+                </div>
+            </div>
+            <div class="flower-card">
+                <div class="flower-img-wrap">
+                    <div class="living-badge ic"><i class="fas fa-home"></i>İç Mekan</div>
+                    <img src="https://images.unsplash.com/photo-1468421870903-4df1664ac249?auto=format&fit=crop&w=400&q=80" alt="Petunya">
+                </div>
+                <div class="flower-content">
+                    <h3>Petunya</h3>
+                    <p>Renkli ve hoş kokulu çiçekleriyle bahçelerin neşesi.</p>
+                    <div class="flower-features">
+                        <span><i class="fas fa-sun"></i> Güneşli</span>
+                        <span><i class="fas fa-tint"></i> Orta Su</span>
+                        <span><i class="fas fa-thermometer-half"></i> 15-25°C</span>
+                    </div>
+                    <div class="flower-bottom">
+                        <span class="flower-price">₺70 <span>/ adet</span></span>
+                        <a href="https://wa.me/905054315002?text=Merhaba,%20Petunya%20siparişi%20vermek%20istiyorum." target="_blank" class="flower-btn">WhatsApp Sipariş</a>
+                    </div>
+                </div>
+            </div>
+            <div class="flower-card">
+                <div class="flower-img-wrap">
+                    <div class="living-badge ic"><i class="fas fa-home"></i>İç Mekan</div>
+                    <img src="https://images.unsplash.com/photo-1509228468518-180dd4864904?auto=format&fit=crop&w=400&q=80" alt="Ortanca">
+                </div>
+                <div class="flower-content">
+                    <h3>Ortanca</h3>
+                    <p>Büyük ve gösterişli çiçek salkımlarıyla dikkat çeker.</p>
+                    <div class="flower-features">
+                        <span><i class="fas fa-cloud-sun"></i> Yarı Gölge</span>
+                        <span><i class="fas fa-tint"></i> Orta Su</span>
+                        <span><i class="fas fa-thermometer-half"></i> 15-22°C</span>
+                    </div>
+                    <div class="flower-bottom">
+                        <span class="flower-price">₺120 <span>/ adet</span></span>
+                        <a href="https://wa.me/905054315002?text=Merhaba,%20Ortanca%20siparişi%20vermek%20istiyorum." target="_blank" class="flower-btn">WhatsApp Sipariş</a>
+                    </div>
+                </div>
+            </div>
+            <div class="flower-card">
+                <div class="flower-img-wrap">
+                    <div class="living-badge ic"><i class="fas fa-home"></i>İç Mekan</div>
+                    <img src="https://images.unsplash.com/photo-1519125323398-675f0ddb6308?auto=format&fit=crop&w=400&q=80" alt="Sardunya">
+                </div>
+                <div class="flower-content">
+                    <h3>Sardunya</h3>
+                    <p>Renkli ve dayanıklı çiçekleriyle balkonların vazgeçilmezi.</p>
+                    <div class="flower-features">
+                        <span><i class="fas fa-sun"></i> Güneşli</span>
+                        <span><i class="fas fa-tint"></i> Az Su</span>
+                        <span><i class="fas fa-thermometer-half"></i> 15-30°C</span>
+                    </div>
+                    <div class="flower-bottom">
+                        <span class="flower-price">₺80 <span>/ adet</span></span>
+                        <a href="https://wa.me/905054315002?text=Merhaba,%20Sardunya%20siparişi%20vermek%20istiyorum." target="_blank" class="flower-btn">WhatsApp Sipariş</a>
+                    </div>
+                </div>
+            </div>
+            <div class="flower-card">
+                <div class="flower-img-wrap">
+                    <div class="living-badge ic"><i class="fas fa-home"></i>İç Mekan</div>
+                    <img src="https://images.unsplash.com/photo-1465101046530-73398c7f28ca?auto=format&fit=crop&w=400&q=80" alt="Meşe">
+                </div>
+                <div class="flower-content">
+                    <h3>Meşe</h3>
+                    <p>Güçlü gövdesi ve geniş yapraklarıyla uzun ömürlü ağaç.</p>
+                    <div class="flower-features">
+                        <span><i class="fas fa-sun"></i> Güneşli</span>
+                        <span><i class="fas fa-tint"></i> Orta Su</span>
+                        <span><i class="fas fa-thermometer-half"></i> -10-30°C</span>
+                    </div>
+                    <div class="flower-bottom">
+                        <span class="flower-price">₺950 <span>/ adet</span></span>
+                        <a href="https://wa.me/905054315002?text=Merhaba,%20Meşe%20siparişi%20vermek%20istiyorum." target="_blank" class="flower-btn">WhatsApp Sipariş</a>
+                    </div>
+                </div>
+            </div>
+            <div class="flower-card">
+                <div class="flower-img-wrap">
+                    <div class="living-badge ic"><i class="fas fa-home"></i>İç Mekan</div>
+                    <img src="https://images.unsplash.com/photo-1501004318641-b39e6451bec6?auto=format&fit=crop&w=400&q=80" alt="Kestane">
+                </div>
+                <div class="flower-content">
+                    <h3>Kestane</h3>
+                    <p>Lezzetli meyvesi ve gölge sağlayan geniş yapraklarıyla bilinir.</p>
+                    <div class="flower-features">
+                        <span><i class="fas fa-sun"></i> Güneşli</span>
+                        <span><i class="fas fa-tint"></i> Orta Su</span>
+                        <span><i class="fas fa-thermometer-half"></i> -10-30°C</span>
+                    </div>
+                    <div class="flower-bottom">
+                        <span class="flower-price">₺1200 <span>/ adet</span></span>
+                        <a href="https://wa.me/905054315002?text=Merhaba,%20Kestane%20siparişi%20vermek%20istiyorum." target="_blank" class="flower-btn">WhatsApp Sipariş</a>
+                    </div>
+                </div>
+            </div>
+            <div class="flower-card">
+                <div class="flower-img-wrap">
+                    <div class="living-badge ic"><i class="fas fa-home"></i>İç Mekan</div>
+                    <img src="https://images.unsplash.com/photo-1464983953574-0892a716854b?auto=format&fit=crop&w=400&q=80" alt="Ardıç">
+                </div>
+                <div class="flower-content">
+                    <h3>Ardıç</h3>
+                    <p>Her daim yeşil, dayanıklı ve hoş kokulu iğne yapraklı ağaç.</p>
+                    <div class="flower-features">
+                        <span><i class="fas fa-sun"></i> Güneşli</span>
+                        <span><i class="fas fa-tint"></i> Az Su</span>
+                        <span><i class="fas fa-thermometer-half"></i> -15-30°C</span>
+                    </div>
+                    <div class="flower-bottom">
+                        <span class="flower-price">₺850 <span>/ adet</span></span>
+                        <a href="https://wa.me/905054315002?text=Merhaba,%20Ardıç%20siparişi%20vermek%20istiyorum." target="_blank" class="flower-btn">WhatsApp Sipariş</a>
+                    </div>
+                </div>
+            </div>
+            <div class="flower-card">
+                <div class="flower-img-wrap">
+                    <div class="living-badge ic"><i class="fas fa-home"></i>İç Mekan</div>
+                    <img src="https://images.unsplash.com/photo-1465101178521-c1a9136a3fd9?auto=format&fit=crop&w=400&q=80" alt="Fıstık Çamı">
+                </div>
+                <div class="flower-content">
+                    <h3>Fıstık Çamı</h3>
+                    <p>Akdeniz ikliminin simgesi, kozalaklı ve uzun ömürlü ağaç.</p>
+                    <div class="flower-features">
+                        <span><i class="fas fa-sun"></i> Güneşli</span>
+                        <span><i class="fas fa-tint"></i> Az Su</span>
+                        <span><i class="fas fa-thermometer-half"></i> -10-35°C</span>
+                    </div>
+                    <div class="flower-bottom">
+                        <span class="flower-price">₺1000 <span>/ adet</span></span>
+                        <a href="https://wa.me/905054315002?text=Merhaba,%20Fıstık%20Çamı%20siparişi%20vermek%20istiyorum." target="_blank" class="flower-btn">WhatsApp Sipariş</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <div class="section-divider"></div>
+    <section id="agaclar" class="products tree-section">
+        <h2 class="products-title">Ağaç Çeşitlerimiz</h2>
+        <p class="products-desc">Özel fidanlıklarımızda yetiştirilen nadir ve mevsimlik ağaç türleri</p>
+        <div class="products-search">
+            <input type="text" id="tree-search" placeholder="Ağaç adı veya açıklama ile ara...">
+        </div>
+        <div class="product-grid flower-grid">
+            <div class="flower-card">
+                <div class="flower-img-wrap">
+                    <div class="living-badge mevsimlik"><i class="fas fa-leaf"></i>Mevsimlik</div>
+                    <img src="https://images.unsplash.com/photo-1501004318641-b39e6451bec6?auto=format&fit=crop&w=400&q=80" alt="Mavi Ladin">
+                </div>
+                <div class="flower-content">
+                    <h3>Mavi Ladin</h3>
+                    <p>Gümüşi-mavi iğne yapraklarıyla dikkat çeken, yıl boyu yeşil kalan konifer.</p>
+                    <div class="flower-features">
+                        <span><i class="fas fa-sun"></i> Güneşli</span>
+                        <span><i class="fas fa-tint"></i> Az Su</span>
+                        <span><i class="fas fa-thermometer-half"></i> -20-30°C</span>
+                    </div>
+                    <div class="flower-bottom">
+                        <span class="flower-price">₺1200 <span>/ adet</span></span>
+                        <a href="https://wa.me/905054315002?text=Merhaba,%20Mavi%20Ladin%20siparişi%20vermek%20istiyorum." target="_blank" class="flower-btn">WhatsApp Sipariş</a>
+                    </div>
+                </div>
+            </div>
+            <div class="flower-card">
+                <div class="flower-img-wrap">
+                    <div class="living-badge mevsimlik"><i class="fas fa-leaf"></i>Mevsimlik</div>
+                    <img src="https://images.unsplash.com/photo-1465101178521-c1a9136a3fd9?auto=format&fit=crop&w=400&q=80" alt="Süs Kirazı">
+                </div>
+                <div class="flower-content">
+                    <h3>Süs Kirazı</h3>
+                    <p>İlkbaharda pembe-beyaz çiçekleriyle bahçeleri süsleyen, yaprak döken ağaç.</p>
+                    <div class="flower-features">
+                        <span><i class="fas fa-sun"></i> Güneşli</span>
+                        <span><i class="fas fa-tint"></i> Orta Su</span>
+                        <span><i class="fas fa-thermometer-half"></i> 15-25°C</span>
+                    </div>
+                    <div class="flower-bottom">
+                        <span class="flower-price">₺950 <span>/ adet</span></span>
+                        <a href="https://wa.me/905054315002?text=Merhaba,%20Süs%20Kirazı%20siparişi%20vermek%20istiyorum." target="_blank" class="flower-btn">WhatsApp Sipariş</a>
+                    </div>
+                </div>
+            </div>
+            <div class="flower-card">
+                <div class="flower-img-wrap">
+                    <div class="living-badge mevsimlik"><i class="fas fa-leaf"></i>Mevsimlik</div>
+                    <img src="https://images.unsplash.com/photo-1465101046530-73398c7f28ca?auto=format&fit=crop&w=400&q=80" alt="Leylandi">
+                </div>
+                <div class="flower-content">
+                    <h3>Leylandi</h3>
+                    <p>Hızlı büyüyen, yıl boyu yeşil kalan, çit ve perdeleme için ideal.</p>
+                    <div class="flower-features">
+                        <span><i class="fas fa-sun"></i> Güneşli</span>
+                        <span><i class="fas fa-tint"></i> Orta Su</span>
+                        <span><i class="fas fa-thermometer-half"></i> -10-35°C</span>
+                    </div>
+                    <div class="flower-bottom">
+                        <span class="flower-price">₺450 <span>/ adet</span></span>
+                        <a href="https://wa.me/905054315002?text=Merhaba,%20Leylandi%20siparişi%20vermek%20istiyorum." target="_blank" class="flower-btn">WhatsApp Sipariş</a>
+                    </div>
+                </div>
+            </div>
+            <div class="flower-card">
+                <div class="flower-img-wrap">
+                    <div class="living-badge mevsimlik"><i class="fas fa-leaf"></i>Mevsimlik</div>
+                    <img src="https://images.unsplash.com/photo-1501004318641-b39e6451bec6?auto=format&fit=crop&w=400&q=80" alt="Mavi Selvi">
+                </div>
+                <div class="flower-content">
+                    <h3>Mavi Selvi</h3>
+                    <p>Dikey formu ve mavi-yeşil yapraklarıyla bahçelere yükseklik katan konifer.</p>
+                    <div class="flower-features">
+                        <span><i class="fas fa-sun"></i> Güneşli</span>
+                        <span><i class="fas fa-tint"></i> Az Su</span>
+                        <span><i class="fas fa-thermometer-half"></i> -15-35°C</span>
+                    </div>
+                    <div class="flower-bottom">
+                        <span class="flower-price">₺650 <span>/ adet</span></span>
+                        <a href="https://wa.me/905054315002?text=Merhaba,%20Mavi%20Selvi%20siparişi%20vermek%20istiyorum." target="_blank" class="flower-btn">WhatsApp Sipariş</a>
+                    </div>
+                </div>
+            </div>
+            <div class="flower-card">
+                <div class="flower-img-wrap">
+                    <div class="living-badge mevsimlik"><i class="fas fa-leaf"></i>Mevsimlik</div>
+                    <img src="https://images.unsplash.com/photo-1465101178521-c1a9136a3fd9?auto=format&fit=crop&w=400&q=80" alt="Süs Armutu">
+                </div>
+                <div class="flower-content">
+                    <h3>Süs Armutu</h3>
+                    <p>Sonbaharda kırmızı yaprakları ve küçük meyveleriyle dikkat çeken ağaç.</p>
+                    <div class="flower-features">
+                        <span><i class="fas fa-sun"></i> Güneşli</span>
+                        <span><i class="fas fa-tint"></i> Orta Su</span>
+                        <span><i class="fas fa-thermometer-half"></i> -15-30°C</span>
+                    </div>
+                    <div class="flower-bottom">
+                        <span class="flower-price">₺950 <span>/ adet</span></span>
+                        <a href="https://wa.me/905054315002?text=Merhaba,%20Süs%20Armutu%20siparişi%20vermek%20istiyorum." target="_blank" class="flower-btn">WhatsApp Sipariş</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <h3 style="margin:2rem 0 1rem 0;color:#ffe066;">Nadir Ağaçlar</h3>
+        <div class="product-grid flower-grid">
+            <div class="flower-card">
+                <div class="flower-img-wrap">
+                    <div class="living-badge ic"><i class="fas fa-home"></i>İç Mekan</div>
+                    <img src="https://images.unsplash.com/photo-1465101046530-73398c7f28ca?auto=format&fit=crop&w=400&q=80" alt="Japon Akçaağacı">
+                </div>
+                <div class="flower-content">
+                    <h3>Japon Akçaağacı</h3>
+                    <p>Yapraklarının kırmızı tonlarıyla bahçelere renk katan, yavaş büyüyen süs ağacı.</p>
+                    <div class="flower-features">
+                        <span><i class="fas fa-cloud-sun"></i> Yarı Gölge</span>
+                        <span><i class="fas fa-tint"></i> Orta Su</span>
+                        <span><i class="fas fa-thermometer-half"></i> 15-25°C</span>
+                    </div>
+                    <div class="flower-bottom">
+                        <span class="flower-price">₺850 <span>/ adet</span></span>
+                        <a href="https://wa.me/905054315002?text=Merhaba,%20Japon%20Akçaağacı%20siparişi%20vermek%20istiyorum." target="_blank" class="flower-btn">WhatsApp Sipariş</a>
+                    </div>
+                </div>
+            </div>
+            <div class="flower-card">
+                <div class="flower-img-wrap">
+                    <div class="living-badge ic"><i class="fas fa-home"></i>İç Mekan</div>
+                    <img src="https://images.unsplash.com/photo-1464983953574-0892a716854b?auto=format&fit=crop&w=400&q=80" alt="Manolya">
+                </div>
+                <div class="flower-content">
+                    <h3>Manolya</h3>
+                    <p>Büyük, kokulu çiçekleri ve görkemli duruşuyla bahçelerin gözdesi.</p>
+                    <div class="flower-features">
+                        <span><i class="fas fa-cloud-sun"></i> Yarı Gölge</span>
+                        <span><i class="fas fa-tint"></i> Orta Su</span>
+                        <span><i class="fas fa-thermometer-half"></i> 15-25°C</span>
+                    </div>
+                    <div class="flower-bottom">
+                        <span class="flower-price">₺1500 <span>/ adet</span></span>
+                        <a href="https://wa.me/905054315002?text=Merhaba,%20Manolya%20siparişi%20vermek%20istiyorum." target="_blank" class="flower-btn">WhatsApp Sipariş</a>
+                    </div>
+                </div>
+            </div>
+            <div class="flower-card">
+                <div class="flower-img-wrap">
+                    <div class="living-badge ic"><i class="fas fa-home"></i>İç Mekan</div>
+                    <img src="https://images.unsplash.com/photo-1465101046530-73398c7f28ca?auto=format&fit=crop&w=400&q=80" alt="Sedir">
+                </div>
+                <div class="flower-content">
+                    <h3>Sedir</h3>
+                    <p>Görkemli yapısı ve iğne yapraklarıyla bahçelerin yıldızı.</p>
+                    <div class="flower-features">
+                        <span><i class="fas fa-sun"></i> Güneşli</span>
+                        <span><i class="fas fa-tint"></i> Az Su</span>
+                        <span><i class="fas fa-thermometer-half"></i> -10-30°C</span>
+                    </div>
+                    <div class="flower-bottom">
+                        <span class="flower-price">₺900 <span>/ adet</span></span>
+                        <a href="https://wa.me/905054315002?text=Merhaba,%20Sedir%20siparişi%20vermek%20istiyorum." target="_blank" class="flower-btn">WhatsApp Sipariş</a>
+                    </div>
+                </div>
+            </div>
+            <div class="flower-card">
+                <div class="flower-img-wrap">
+                    <div class="living-badge ic"><i class="fas fa-home"></i>İç Mekan</div>
+                    <img src="https://images.unsplash.com/photo-1501004318641-b39e6451bec6?auto=format&fit=crop&w=400&q=80" alt="Çınar">
+                </div>
+                <div class="flower-content">
+                    <h3>Çınar</h3>
+                    <p>Geniş yaprakları ve uzun ömrüyle şehirlerin simgesi.</p>
+                    <div class="flower-features">
+                        <span><i class="fas fa-sun"></i> Güneşli</span>
+                        <span><i class="fas fa-tint"></i> Orta Su</span>
+                        <span><i class="fas fa-thermometer-half"></i> -15-35°C</span>
+                    </div>
+                    <div class="flower-bottom">
+                        <span class="flower-price">₺1100 <span>/ adet</span></span>
+                        <a href="https://wa.me/905054315002?text=Merhaba,%20Çınar%20siparişi%20vermek%20istiyorum." target="_blank" class="flower-btn">WhatsApp Sipariş</a>
+                    </div>
+                </div>
+            </div>
+            <div class="flower-card">
+                <div class="flower-img-wrap">
+                    <div class="living-badge ic"><i class="fas fa-home"></i>İç Mekan</div>
+                    <img src="https://images.unsplash.com/photo-1464983953574-0892a716854b?auto=format&fit=crop&w=400&q=80" alt="Ihlamur">
+                </div>
+                <div class="flower-content">
+                    <h3>Ihlamur</h3>
+                    <p>Kokulu çiçekleriyle yaz akşamlarının vazgeçilmezi.</p>
+                    <div class="flower-features">
+                        <span><i class="fas fa-sun"></i> Güneşli</span>
+                        <span><i class="fas fa-tint"></i> Orta Su</span>
+                        <span><i class="fas fa-thermometer-half"></i> -10-30°C</span>
+                    </div>
+                    <div class="flower-bottom">
+                        <span class="flower-price">₺950 <span>/ adet</span></span>
+                        <a href="https://wa.me/905054315002?text=Merhaba,%20Ihlamur%20siparişi%20vermek%20istiyorum." target="_blank" class="flower-btn">WhatsApp Sipariş</a>
+                    </div>
+                </div>
+            </div>
+            <div class="flower-card">
+                <div class="flower-img-wrap">
+                    <div class="living-badge ic"><i class="fas fa-home"></i>İç Mekan</div>
+                    <img src="https://images.unsplash.com/photo-1465101178521-c1a9136a3fd9?auto=format&fit=crop&w=400&q=80" alt="Akasya">
+                </div>
+                <div class="flower-content">
+                    <h3>Akasya</h3>
+                    <p>Beyaz salkım çiçekleriyle bahar aylarında göz alıcı.</p>
+                    <div class="flower-features">
+                        <span><i class="fas fa-sun"></i> Güneşli</span>
+                        <span><i class="fas fa-tint"></i> Az Su</span>
+                        <span><i class="fas fa-thermometer-half"></i> -5-30°C</span>
+                    </div>
+                    <div class="flower-bottom">
+                        <span class="flower-price">₺800 <span>/ adet</span></span>
+                        <a href="https://wa.me/905054315002?text=Merhaba,%20Akasya%20siparişi%20vermek%20istiyorum." target="_blank" class="flower-btn">WhatsApp Sipariş</a>
+                    </div>
+                </div>
+            </div>
+            <div class="flower-card">
+                <div class="flower-img-wrap">
+                    <div class="living-badge ic"><i class="fas fa-home"></i>İç Mekan</div>
+                    <img src="https://images.unsplash.com/photo-1501004318641-b39e6451bec6?auto=format&fit=crop&w=400&q=80" alt="Kavak">
+                </div>
+                <div class="flower-content">
+                    <h3>Kavak</h3>
+                    <p>Hızlı büyüyen, uzun gövdeli ve dayanıklı ağaç türü.</p>
+                    <div class="flower-features">
+                        <span><i class="fas fa-sun"></i> Güneşli</span>
+                        <span><i class="fas fa-tint"></i> Orta Su</span>
+                        <span><i class="fas fa-thermometer-half"></i> -10-35°C</span>
+                    </div>
+                    <div class="flower-bottom">
+                        <span class="flower-price">₺700 <span>/ adet</span></span>
+                        <a href="https://wa.me/905054315002?text=Merhaba,%20Kavak%20siparişi%20vermek%20istiyorum." target="_blank" class="flower-btn">WhatsApp Sipariş</a>
+                    </div>
+                </div>
+            </div>
+            <div class="flower-card">
+                <div class="flower-img-wrap">
+                    <div class="living-badge ic"><i class="fas fa-home"></i>İç Mekan</div>
+                    <img src="https://images.unsplash.com/photo-1465101046530-73398c7f28ca?auto=format&fit=crop&w=400&q=80" alt="Meşe">
+                </div>
+                <div class="flower-content">
+                    <h3>Meşe</h3>
+                    <p>Güçlü gövdesi ve geniş yapraklarıyla uzun ömürlü ağaç.</p>
+                    <div class="flower-features">
+                        <span><i class="fas fa-sun"></i> Güneşli</span>
+                        <span><i class="fas fa-tint"></i> Orta Su</span>
+                        <span><i class="fas fa-thermometer-half"></i> -10-30°C</span>
+                    </div>
+                    <div class="flower-bottom">
+                        <span class="flower-price">₺950 <span>/ adet</span></span>
+                        <a href="https://wa.me/905054315002?text=Merhaba,%20Meşe%20siparişi%20vermek%20istiyorum." target="_blank" class="flower-btn">WhatsApp Sipariş</a>
+                    </div>
+                </div>
+            </div>
+            <div class="flower-card">
+                <div class="flower-img-wrap">
+                    <div class="living-badge ic"><i class="fas fa-home"></i>İç Mekan</div>
+                    <img src="https://images.unsplash.com/photo-1501004318641-b39e6451bec6?auto=format&fit=crop&w=400&q=80" alt="Kestane">
+                </div>
+                <div class="flower-content">
+                    <h3>Kestane</h3>
+                    <p>Lezzetli meyvesi ve gölge sağlayan geniş yapraklarıyla bilinir.</p>
+                    <div class="flower-features">
+                        <span><i class="fas fa-sun"></i> Güneşli</span>
+                        <span><i class="fas fa-tint"></i> Orta Su</span>
+                        <span><i class="fas fa-thermometer-half"></i> -10-30°C</span>
+                    </div>
+                    <div class="flower-bottom">
+                        <span class="flower-price">₺1200 <span>/ adet</span></span>
+                        <a href="https://wa.me/905054315002?text=Merhaba,%20Kestane%20siparişi%20vermek%20istiyorum." target="_blank" class="flower-btn">WhatsApp Sipariş</a>
+                    </div>
+                </div>
+            </div>
+            <div class="flower-card">
+                <div class="flower-img-wrap">
+                    <div class="living-badge ic"><i class="fas fa-home"></i>İç Mekan</div>
+                    <img src="https://images.unsplash.com/photo-1464983953574-0892a716854b?auto=format&fit=crop&w=400&q=80" alt="Ardıç">
+                </div>
+                <div class="flower-content">
+                    <h3>Ardıç</h3>
+                    <p>Her daim yeşil, dayanıklı ve hoş kokulu iğne yapraklı ağaç.</p>
+                    <div class="flower-features">
+                        <span><i class="fas fa-sun"></i> Güneşli</span>
+                        <span><i class="fas fa-tint"></i> Az Su</span>
+                        <span><i class="fas fa-thermometer-half"></i> -15-30°C</span>
+                    </div>
+                    <div class="flower-bottom">
+                        <span class="flower-price">₺850 <span>/ adet</span></span>
+                        <a href="https://wa.me/905054315002?text=Merhaba,%20Ardıç%20siparişi%20vermek%20istiyorum." target="_blank" class="flower-btn">WhatsApp Sipariş</a>
+                    </div>
+                </div>
+            </div>
+            <div class="flower-card">
+                <div class="flower-img-wrap">
+                    <div class="living-badge ic"><i class="fas fa-home"></i>İç Mekan</div>
+                    <img src="https://images.unsplash.com/photo-1465101178521-c1a9136a3fd9?auto=format&fit=crop&w=400&q=80" alt="Fıstık Çamı">
+                </div>
+                <div class="flower-content">
+                    <h3>Fıstık Çamı</h3>
+                    <p>Akdeniz ikliminin simgesi, kozalaklı ve uzun ömürlü ağaç.</p>
+                    <div class="flower-features">
+                        <span><i class="fas fa-sun"></i> Güneşli</span>
+                        <span><i class="fas fa-tint"></i> Az Su</span>
+                        <span><i class="fas fa-thermometer-half"></i> -10-35°C</span>
+                    </div>
+                    <div class="flower-bottom">
+                        <span class="flower-price">₺1000 <span>/ adet</span></span>
+                        <a href="https://wa.me/905054315002?text=Merhaba,%20Fıstık%20Çamı%20siparişi%20vermek%20istiyorum." target="_blank" class="flower-btn">WhatsApp Sipariş</a>
+                    </div>
                 </div>
             </div>
         </div>
     </section>
 
-    <!-- About Section -->
     <section id="hakkimizda" class="about">
-        <div class="about-content" data-aos="fade-right">
-            <h2>Hakkımızda</h2>
-            <p>1982 yılından bu yana Türkiye'nin önde gelen peyzaj tasarım şirketlerinden biri olarak hizmet veriyoruz. Uzman ekibimiz ve yenilikçi yaklaşımımızla her projeyi özel kılıyoruz.</p>
-            <div class="about-features">
-                <div class="feature">
-                    <i class="fas fa-check-circle"></i>
-                    <span>Profesyonel Ekip</span>
-                </div>
-                <div class="feature">
-                    <i class="fas fa-check-circle"></i>
-                    <span>Modern Teknoloji</span>
-                </div>
-                <div class="feature">
-                    <i class="fas fa-check-circle"></i>
-                    <span>Kaliteli Malzeme</span>
-                </div>
-                <div class="feature">
-                    <i class="fas fa-check-circle"></i>
-                    <span>7/24 Destek</span>
+        <div class="about-container">
+            <div class="about-left">
+                <h2>Hakkımızda</h2>
+                <p>1982 yılından bu yana Türkiye'nin önde gelen peyzaj tasarım şirketlerinden biri olarak hizmet veriyoruz. Uzman ekibimiz ve yenilikçi yaklaşımımızla her projeyi özel kılıyoruz.</p>
+                <div class="about-features">
+                    <div class="about-feature"><i class="fas fa-check-circle"></i> Profesyonel Ekip</div>
+                    <div class="about-feature"><i class="fas fa-check-circle"></i> Modern Teknoloji</div>
+                    <div class="about-feature"><i class="fas fa-check-circle"></i> Kaliteli Malzeme</div>
+                    <div class="about-feature"><i class="fas fa-check-circle"></i> 7/24 Destek</div>
+                    </div>
+                    </div>
+            <div class="about-right">
+                <img src="https://images.unsplash.com/photo-1506744038136-46273834b3fb?auto=format&fit=crop&w=800&q=80" alt="Hakkımızda Peyzaj" />
                 </div>
             </div>
-        </div>
-        <div class="about-image" data-aos="fade-left">
-            <div class="image-container">
-                <img src="https://images.unsplash.com/photo-1585320806297-9794b3e4eeae?ixlib=rb-1.2.1&auto=format&fit=crop&w=1950&q=80" alt="Peyzaj Tasarım">
-                <div class="image-overlay"></div>
-            </div>
-        </div>
     </section>
 
-    <!-- Contact Section -->
     <section id="iletisim" class="contact">
-        <div class="section-header" data-aos="fade-up">
+        <div class="contact-header">
             <h2>İletişim</h2>
             <p>Projeniz için bizimle iletişime geçin</p>
-        </div>
-        <div class="contact-container">
-            <form class="contact-form" data-aos="fade-right">
-                <div class="form-group">
-                    <input type="text" placeholder="Adınız" required>
                 </div>
-                <div class="form-group">
-                    <input type="email" placeholder="E-posta Adresiniz" required>
-                </div>
-                <div class="form-group">
-                    <input type="tel" placeholder="Telefon Numaranız" required>
-                </div>
-                <div class="form-group">
-                    <select required>
-                        <option value="">Hizmet Seçiniz</option>
-                        <option value="villa">Villa Bahçesi</option>
-                        <option value="teras">Teras Bahçesi</option>
-                        <option value="kurumsal">Kurumsal Peyzaj</option>
-                        <option value="bakim">Bakım Hizmeti</option>
-                    </select>
-                </div>
-                <div class="form-group">
-                    <textarea placeholder="Projeniz hakkında bilgi veriniz" required></textarea>
-                </div>
+        <div class="contact-main">
+            <form class="contact-form">
+                <input type="text" placeholder="Adınız" required>
+                <input type="email" placeholder="E-posta Adresiniz" required>
+                <input type="tel" placeholder="Telefon Numaranız">
+                <select required>
+                    <option value="">Hizmet Seçiniz</option>
+                    <option value="peyzaj">Peyzaj Tasarımı</option>
+                    <option value="bitki">Bitki Düzenleme</option>
+                    <option value="aydinlatma">Bahçe Aydınlatma</option>
+                    <option value="sulama">Sulama Sistemleri</option>
+                </select>
+                <textarea placeholder="Projeniz hakkında bilgi veriniz" required></textarea>
                 <button type="submit" class="submit-button">Gönder</button>
             </form>
-            <div class="contact-info" data-aos="fade-left">
-                <div class="info-card">
+            <div class="contact-info-grid">
+                <div class="contact-info-card">
                     <i class="fas fa-map-marker-alt"></i>
                     <h3>Adres</h3>
                     <p>Levent, İstanbul</p>
-                </div>
-                <div class="info-card">
+                    </div>
+                <div class="contact-info-card">
                     <i class="fas fa-phone"></i>
                     <h3>Telefon</h3>
                     <p>+90 212 123 45 67</p>
-                </div>
-                <div class="info-card">
+                    </div>
+                <div class="contact-info-card">
                     <i class="fas fa-envelope"></i>
                     <h3>E-posta</h3>
                     <p>info@peyzaj42.com</p>
                 </div>
-                <div class="info-card">
+                <div class="contact-info-card">
                     <i class="fas fa-clock"></i>
                     <h3>Çalışma Saatleri</h3>
                     <p>Pazartesi - Cumartesi: 09:00 - 18:00</p>
-                </div>
             </div>
-        </div>
+                </div>
+                    </div>
     </section>
 
-    <!-- Footer -->
     <footer>
-        <div class="footer-content">
-            <div class="footer-section">
-                <h3>Peyzaj 42</h3>
+        <div class="footer-grid">
+            <div class="footer-col">
+                <h3 class="footer-title">Peyzaj 42</h3>
                 <p>Türkiye'nin önde gelen peyzaj tasarım şirketi</p>
-                <div class="social-links">
-                    <a href="#"><i class="fab fa-facebook"></i></a>
-                    <a href="#"><i class="fab fa-instagram"></i></a>
-                    <a href="#"><i class="fab fa-twitter"></i></a>
-                    <a href="#"><i class="fab fa-linkedin"></i></a>
+                <div class="footer-socials">
+                    <a href="#" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+                    <a href="#" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+                    <a href="#" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
+                    <a href="#" aria-label="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
+                    </div>
                 </div>
-            </div>
-            <div class="footer-section">
-                <h3>Hızlı Bağlantılar</h3>
-                <ul>
+            <div class="footer-col">
+                <h3 class="footer-title">Hızlı Bağlantılar</h3>
+                <ul class="footer-links">
                     <li><a href="#anasayfa">Ana Sayfa</a></li>
                     <li><a href="#hizmetler">Hizmetler</a></li>
                     <li><a href="#urunler">Ürünler</a></li>
@@ -352,96 +930,19 @@
                     <li><a href="#iletisim">İletişim</a></li>
                 </ul>
             </div>
-            <div class="footer-section">
-                <h3>İletişim</h3>
-                <p><i class="fas fa-map-marker-alt"></i> Levent, İstanbul</p>
-                <p><i class="fas fa-phone"></i> +90 212 123 45 67</p>
-                <p><i class="fas fa-envelope"></i> info@peyzaj42.com</p>
-            </div>
-        </div>
+            <div class="footer-col">
+                <h3 class="footer-title">İletişim</h3>
+                <ul class="footer-contact">
+                    <li><i class="fas fa-map-marker-alt"></i> Levent, İstanbul</li>
+                    <li><i class="fas fa-phone"></i> +90 212 123 45 67</li>
+                    <li><i class="fas fa-envelope"></i> info@peyzaj42.com</li>
+                </ul>
+                </div>
+                    </div>
         <div class="footer-bottom">
             <p>&copy; 2024 Peyzaj 42. Tüm hakları saklıdır.</p>
-        </div>
+                    </div>
     </footer>
-
-    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
-    <script>
-        // Initialize AOS
-        AOS.init({
-            duration: 1000,
-            once: true
-        });
-
-        // Smooth scrolling
-        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
-            anchor.addEventListener('click', function (e) {
-                e.preventDefault();
-                document.querySelector(this.getAttribute('href')).scrollIntoView({
-                    behavior: 'smooth'
-                });
-            });
-        });
-
-        // Mobile menu toggle
-        const menuToggle = document.querySelector('.menu-toggle');
-        const navLinks = document.querySelector('.nav-links');
-
-        menuToggle.addEventListener('click', () => {
-            navLinks.classList.toggle('active');
-            menuToggle.classList.toggle('active');
-        });
-
-        // Nav link active state
-        const navItems = document.querySelectorAll('.nav-links a');
-        navItems.forEach(item => {
-            item.addEventListener('click', () => {
-                navItems.forEach(i => i.classList.remove('active'));
-                item.classList.add('active');
-            });
-        });
-
-        // Product filtering
-        const filterButtons = document.querySelectorAll('.filter-btn');
-        const productCards = document.querySelectorAll('.product-card');
-
-        filterButtons.forEach(button => {
-            button.addEventListener('click', () => {
-                filterButtons.forEach(btn => btn.classList.remove('active'));
-                button.classList.add('active');
-
-                const category = button.getAttribute('data-category');
-
-                productCards.forEach(card => {
-                    if (category === 'all') {
-                        card.classList.add('show');
-                    } else {
-                        if (card.getAttribute('data-category') === category) {
-                            card.classList.add('show');
-                        } else {
-                            card.classList.remove('show');
-                        }
-                    }
-                });
-            });
-        });
-
-        // Add animation to product cards
-        const observerOptions = {
-            threshold: 0.1
-        };
-
-        const observer = new IntersectionObserver((entries) => {
-            entries.forEach(entry => {
-                if (entry.isIntersecting) {
-                    entry.target.style.opacity = '1';
-                    entry.target.style.transform = 'translateY(0)';
-                }
-            });
-        }, observerOptions);
-
-        productCards.forEach(card => {
-            observer.observe(card);
-        });
-    </script>
+    <script src="script.js"></script>
 </body>
-</html>
+</html> 
